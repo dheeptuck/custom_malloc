@@ -24,7 +24,7 @@ void *CustomMalloc(HEAP_INFO_t *pHeapInfo, size_t sz)
         int residueMemory = iter->blkSize-sz;
         if(residueMemory > 0)
         {
-            if(residueMemory > sizeof(BD_t))
+            if((unsigned int)residueMemory > sizeof(BD_t))
             {
                 /*Update the BD moved to alloc_dll*/
                 iter->blkSize = sz;
