@@ -16,6 +16,6 @@ The BD's are placed in the heap. Each BD is placed in the heap such that it imme
 2. The tests can be found in tests.c. Each function is a test.
 
 ## Building & Running
-make clean
-make
-make run
+make clean  
+make  
+make run  
